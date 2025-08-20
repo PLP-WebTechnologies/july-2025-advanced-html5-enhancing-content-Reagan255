@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      margin-bottom: 2rem;
+    }
+    form {
+      max-width: 600px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    fieldset {
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      padding: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    img, video {
+      max-width: 100%;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form Page</h1>
+    <p>This page demonstrates semantic HTML structure, media content, a data table, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Features List</h2>
+      <ul>
+        <li>Well-structured content using semantic tags</li>
+        <li>HTML5 form with various input types</li>
+        <li>Accessible labels and validation</li>
+        <li>Embedded media (image and video)</li>
+        <li>Data table with proper headings</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sample Data Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Autocomplete</td>
+            <td>Helps users fill out forms quickly with stored data.</td>
+          </tr>
+          <tr>
+            <td>Required Fields</td>
+            <td>Ensures critical information is always provided.</td>
+          </tr>
+          <tr>
+            <td>Validation</td>
+            <td>Prevents invalid input (e.g., invalid email format).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Examples</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png" alt="Placeholder banner image">
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required autocomplete="given-name">
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required autocomplete="family-name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" autocomplete="new-password">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select one...</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="newsletter">Subscribe to newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color">
+
+          <label for="rating">Rate our site (1–10):</label>
+          <input type="number" id="rating" name="rating" min="1" max="10">
+
+          <label for="readonlyfield">Referral Code:</label>
+          <input type="text" id="readonlyfield" name="referral" value="AUTO1234" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">Leave a comment:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+  </footer>
+</body>
+</html>
